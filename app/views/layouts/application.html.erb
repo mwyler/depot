@@ -13,12 +13,15 @@
      <%= @page_title || "Pragmatic Bookshelf" %>
      </div>
        <div id="columns" >
-       <div id="side" >
-       <a href="../store/index" >Home</a><br />
-       <a href="../store/index" >Questions</a><br />
-       <a href="../store/index" >News</a><br />
-       <a href="../store/index" >Contact</a><br />
-     </div>
+         <div id="side" >
+           <div id="cart">
+             <%=render(@cart) %>
+           </div>
+           <a href="../store/index" >Home</a><br />
+           <a href="../store/index" >Questions</a><br />
+           <a href="../store/index" >News</a><br />
+           <a href="../store/index" >Contact</a><br />
+       </div>
      <div id="main" >
       <%= yield %>
      </div>
