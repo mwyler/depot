@@ -1,4 +1,4 @@
-page.replace('cart', render(@cart))
+page.replace_html('cart', render(@cart))
 
 page[:cart].visual_effect :blind_down if @cart.total_items == 1
 
